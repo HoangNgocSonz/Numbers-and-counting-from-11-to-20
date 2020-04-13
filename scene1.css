@@ -1,0 +1,80 @@
+.main{
+    width:960px;
+    height: 500px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 10px;
+    margin-left:23%;
+    margin-top:50px;
+    background-color: rgb(255, 255, 255);
+}
+.target1{
+    border: 4px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    width: 437px;
+    height: 141px;
+    margin-left:30px;
+}
+.target2{
+    border: 4px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    width: 437px;
+    height: 141px;
+    margin-left:-4px;
+}
+.target1_true{
+    width: 377px;
+    height: 141px;
+    margin-left: 30px;
+    margin-top: 10px;
+    /* display: flex;
+    align-items: flex-end; */
+}
+.target2_true{
+    width: 357px;
+    height: 121px;
+    margin-left: 60px;
+    margin-top: 10px;
+    /* display: flex;
+    align-items: flex-end; */
+}
+.description{
+    margin-top:50px;
+    margin-bottom: 10px;
+}
+.images{
+    margin-left: 30px;
+}
+.col-3 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.target1_true img{
+    margin-right: -15px;
+}
+.target2_true img{
+    margin-right: 10px;
+}
+.tenOrOnes{
+    height: 86;
+    width: 173;
+    border: 9px solid #FFD000;
+    border-radius: 20px;
+}
+/* .tenOrOnes2{
+    height: 120;
+    width: 200;
+    border-radius: 9px;
+    border: #FFD000;
+} */
+#button1{
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+.button{
+    height: 43px;
+    width: 155px;
+}
+
+
+
+
