@@ -1,10 +1,16 @@
+.scene1{
+    height: 1010px;
+    width: 960px;
+    border-radius:20px;
+    margin-left: 10%;
+    
+}
 .main{
     width:960px;
     height: 500px;
     border: 1px solid rgb(177, 177, 177);
-    border-radius: 10px;
+    border-radius: 0px 0px 20px 20px;
     margin-left:23%;
-    margin-top:50px;
     background-color: rgb(255, 255, 255);
 }
 .target1{
@@ -89,3 +95,38 @@
 }
 
 
+.process{
+    width:960px;
+    height: 50px;
+    border-top: 1px solid rgb(177, 177, 177);
+    border-left: 1px solid rgb(177, 177, 177);
+    border-right: 1px solid rgb(177, 177, 177);
+    border-radius: 20px 20px 0px 0px;
+    margin-left:23%;
+    margin-top:50px;
+    background-color: rgb(255, 255, 255);
+}
+.divAbove{
+    width: 500px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241);
+    margin-left: 18%;
+    margin-top:12px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.ball{
+    width: 22px;
+    height: auto;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    margin-right: -4px;
+}
+
+.back{
+    width: 50px;
+    height: 40px;
+    font-size: 29px;
+    margin-left: 16px;
+    margin-top: 30px;
+}
