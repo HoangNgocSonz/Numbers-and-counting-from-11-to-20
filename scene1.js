@@ -47,8 +47,11 @@ function showSelect2() {
   $("#select2").append('<div style="margin-left: 115px; margin-top:32px"><h2>6 blocks = 6 ones</h2></div>');
   
 }
-function showScene1(){
-  
+function showScene1_1(){
+  $(document).ready(function(){
+    $(".start").remove();
+    $(".scene1").append($(".scene1_1").html());
+  });
 }
 
 
