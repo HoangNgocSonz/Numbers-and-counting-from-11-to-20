@@ -47,6 +47,9 @@ function showSelect2() {
   $("#select2").append('<div style="margin-left: 115px; margin-top:32px"><h2>6 blocks = 6 ones</h2></div>');
   
 }
+function showScene1(){
+  
+}
 
 
   
