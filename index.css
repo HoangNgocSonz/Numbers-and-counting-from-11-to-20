@@ -1,0 +1,26 @@
+header{
+    width: 1440px;
+    height: 100px;
+    background-color: burlywood ;
+    margin: auto ;
+}
+
+nav{
+    width: 1440px;
+    height: 45px;
+    background-color: rgb(56, 90, 141) ;
+    margin: auto;
+}
+#main_body{
+    width: 1440px;
+    height: 550px;
+    background-color: rgb(187, 37, 37) ;
+    
+}
+#main_left{
+    width: 340px;
+    height: 550px;
+    background-color: rgb(52, 37, 187) ;
+    float: left;
+    
+}
