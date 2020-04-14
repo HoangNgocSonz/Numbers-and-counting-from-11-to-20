@@ -1,26 +1,48 @@
 header{
-    width: 1440px;
+    width: 1440;
     height: 100px;
     background-color: burlywood ;
     margin: auto ;
 }
 
 nav{
-    width: 1440px;
-    height: 45px;
+    width: 1440;
+    height: 30px;
     background-color: rgb(56, 90, 141) ;
     margin: auto;
 }
 #main_body{
-    width: 1440px;
+    width: 1440 ;
     height: 550px;
-    background-color: rgb(187, 37, 37) ;
     
+    margin: auto;
 }
 #main_left{
-    width: 340px;
+    width: 390px;
     height: 550px;
-    background-color: rgb(52, 37, 187) ;
+    
+    float: left;
+    
+}
+#main_right{
+    widows: 1050px;;
+    height: 550px;
+    
+    margin: auto;
+}
+.img{
+    width: 150px ;
+    height: 150px;
+    margin: auto;
+}
+.link{
+    width: 800px ;
+    height: 30px ;
+    float: left;
+}
+.list{
+    width: 800px ;
+    height: 500px ;
     float: left;
     
 }
