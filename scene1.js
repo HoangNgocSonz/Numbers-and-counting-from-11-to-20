@@ -45,12 +45,18 @@ function showSelect2() {
   $("#toRemove2").remove();
   $("#toRemove2").remove();
   $("#select2").append('<div style="margin-left: 115px; margin-top:32px"><h2>6 blocks = 6 ones</h2></div>');
+    setTimeout(function(){
+      $(".scene1_1").remove();
+      $(".scene1").append($(".start").html());
+     }, 2000);
   
 }
 function showScene1_1(){
   $(document).ready(function(){
+    var x = document.getElementById("scene1_1");
+      x.style.display = "block";
     $(".start").remove();
-    $(".scene1").append($(".scene1_1").html());
+    // $(".scene1").append($(".scene1_1").html());
   });
 }
 
