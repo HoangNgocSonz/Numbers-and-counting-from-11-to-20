@@ -5,180 +5,180 @@
     <script src="scene1.js"></script>
     <link rel="stylesheet" type="text/css" href="scene1.css" media="screen" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
 </head>
-<body style="background-image: url('https://i.pinimg.com/originals/e8/82/67/e88267a222de3b152d6aced055fc84a7.jpg') ; " >
+<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQm2wxTRx_0nbsa2sz-pmEcQN5J2_kugAXMlhwFDkxSf4gn5uOn&usqp=CAU') ; " >
+    
     <div class="scene1">
-        <div >
-            <div class="scene1_1" id="scene1_1">
-                <div class="process">
-                    <div class="row">
-                        <div class="col-1">
-                            <a href="index.html" class="back">Back</a>
-                        </div>
-                        <div class="col-10"> 
-                            <div class="divAbove">
-                                <img class="ball" src ="assests/images/ball.png"></img>
-                                <img class="ball" src ="assests/images/ball.png"></img>
-                                <img class="ball" src ="assests/images/ball.png"></img>
-                                <img class="ball" src ="assests/images/ball.png"></img>
-                                <img class="ball" src ="assests/images/ball.png"></img>
-                    
-                            </div>
-                        </div>
-                        <div class="col-1">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Action
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                   
+        <!-- thanh tiến trình trùng cho màn 1 -->
+        <div class="divAbove">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html" class="back" >Back</a>
                 </div>
-                <div class="main">
-                    <div class="images">
-                        <div class="row">
-                            <div class="col-1" style="height: 70px;"></div>
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img id="drag1" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag2" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag3" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag4" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
+                <div class="col-8"> 
+                    <div class="process">
+                        <img class="ball" src ="assests/images/ball.png" id="ball1"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball2"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball3"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball4"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball5"></img>
+            
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="chooseLanguare">
+                            English
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Vietnamese</a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- màn hình start -->
+        <img class="start" id="start" src="assests/images/start.png" onClick="showNextScene()">
+
+        <!-- màn 1.1 -->
+        <div class="scene1_1" id="scene1_1" style="display: none;">
+            
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-1">
+                    <h3 class="description" onClick="log()">Tens</h3>
+                </div>
+                <div class="col-5"></div>
+                <div class="col-1" id="ones">  
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="main">
+                <div class="images">
+                    <div class="row">
+                        <div class="col-1" style="height: 70px;"></div>
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag1" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag2" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag3" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag4" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img id="drag5" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag6" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag7" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag8" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag5" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag6" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag7" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag8" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img id="drag9" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag10" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag11" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag12" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag9" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag10" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag11" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag12" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img id="drag13" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag14" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag15" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
-                                            <div class="col-3">
-                                                <img id="drag16" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                            </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag13" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag14" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag15" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag16" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-1"></div>
                         </div>
-                        
-                    
+                        <div class="col-1"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">
-                        </div>
-                        <div class="col-2">
-                            <h2 class="description">Tens</h2>
-                        </div>
-                        <div class="col-4"></div>
-                        <div class="col-4" id="ones"></div>
-                    </div>
-            
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="target1">
-                                <div class="target1_true" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="target2">
-                                <div class="target2_true" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            
-                                </div>
+                </div>
+                <div class="row" >
+                    <div class="col-6">
+                        <div class="target1">
+                            <div class="target1_true" id="target1_true" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6" id="select1">
-                            <div class="row" id="hide1" hidden >
-                                <div class="row"  id="toRemove">
-                                    <div class="col-4" id=""></div>
-                                    <div class="col-4"><h2>1 bar = 1</h2></div>
-                                    <div class="col-4" id="mlem">
-                                        <div class="tenOrOnes" id="hide11">
-                                            <div class="button" id="button1"  >
-                                                <h4 onClick="showSelect()" id="hide">tens</h4>
-                                            </div>
-                                            <div class="button" id="button2">
-                                                <h4 > ones</h4>
-                                            </div>
+                    <div class="col-6">
+                        <div class="target2" id="target2">
+                            <div class="target2_true" id="div1" >
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="allSelect">
+                    <div class="col-6" id="select1">
+                        <div class="row" id="hide1" hidden >
+                            <div class="row"  id="toRemove">
+                                <div class="col-4" id=""></div>
+                                <div class="col-4"><h3 id="bar1">1 bar = 1</h3></div>
+                                <div class="col-4" id="mlem">
+                                    <div class="tenOrOnes" id="hide11">
+                                        <div class="button" id="button1"  >
+                                            <h3 onClick="showSelect()" >tens</h3>
+                                        </div>
+                                        <div class="button" id="button2">
+                                            <h3 > ones</h3>
                                         </div>
                                     </div>
-                                </div> 
-                            </div>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="col-6" id="select2">
-                            <div class="row" id="hide2" hidden>
-                                <div class="row" id="toRemove2">
-                                    <div class="col-2" id=""></div>
-                                    <div class="col-6" style="margin-top:35px"><h2>6 blocks = 6</h2></div>
-                                    <div class="col-4">
-                                        <div class="tenOrOnes">
-                                            <button class="button" id="button1">
-                                                <h4 >tens</h4>
-                                            </button>
-            
-                                            <button class="button" id="button2">
-                                                <h4 onClick="showSelect2()" id="hide">ones</h4>
-                                            </button>
+                    </div>
+                    <div class="col-6" id="select2">
+                        <div class="row" id="hide2" hidden>
+                            <div class="row" id="toRemove2">
+                                <div class="col-2" id=""></div>
+                                <div class="col-5" style="margin-top:35px"><h3 id="block6">6 blocks = 6</h3></div>
+                                <div class="col-4" id="toReplace">
+                                    <div class="tenOrOnes">
+                                        <div class="button" id="button1">
+                                            <h3 >tens</h3>
+                                        </div>
+                                        <div class="button" id="button2"  >
+                                            <h3 onClick="finishScene1_1()" id="hide">ones</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -187,18 +187,155 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        <div>
-            <img class="start" src="assests/images/start.png" onClick="showScene1_1()">
-        </div>
-    </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- màn 1.2 -->
+        <div class="scene1_2" id="scene1_2" style="display: none;">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-1">
+                    <h3 class="description" onClick="log()">Tens</h3>
+                </div>
+                <div class="col-5"></div>
+                <div class="col-1" id="ones">  
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="main">
+                <div class="images">
+                    <div class="row">
+                        <div class="col-1" style="height: 70px;"></div>
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag1" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag2" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag3" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag4" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag5" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag6" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag7" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag8" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag9" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag10" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag11" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag12" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag13" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag14" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag15" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag16" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-6">
+                        <div class="target1">
+                            <div class="target1_true" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="target2" id="target2">
+                            <div class="target2_true" id="div1" >
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="allSelect">
+                    <div class="col-6" id="select1">
+                        <div class="row" id="hide1" hidden >
+                            <div class="row"  id="toRemove">
+                                <div class="col-4" id=""></div>
+                                <div class="col-4"><h3 id="bar1">1 bar = 1</h3></div>
+                                <div class="col-4" id="mlem">
+                                    <div class="tenOrOnes" id="hide11">
+                                        <div class="button" id="button1"  >
+                                            <h3 onClick="showSelect()" >tens</h3>
+                                        </div>
+                                        <div class="button" id="button2">
+                                            <h3 > ones</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-6" id="select2">
+                        <div class="row" id="hide2" hidden>
+                            <div class="row" id="toRemove2">
+                                <div class="col-2" id=""></div>
+                                <div class="col-5" style="margin-top:35px"><h3 id="block6">6 blocks = 6</h3></div>
+                                <div class="col-4" id="toReplace">
+                                    <div class="tenOrOnes">
+                                        <div class="button" id="button1">
+                                            <h3 >tens</h3>
+                                        </div>
+                                        <div class="button" id="button2"  >
+                                            <h3 onClick="finishScene1_1()" id="hide">ones</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- <div class="col-4" style="margin-left: 100px;"><h2>1 bar = 1 Tens</h2></div> -->
-
-<!-- <div class="row"><div class="col-4" id=""></div><div class="col-4"><h2>1bar = 1</h2></div><div class="col-4"><div class="tenOrOnes"><div class="button" id="button1"><h4 >Tens</h4></div><div class="button" id="button2"><h4 > Ones</h4></div></div></div></div> -->
