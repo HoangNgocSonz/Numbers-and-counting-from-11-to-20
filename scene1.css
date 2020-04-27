@@ -260,3 +260,182 @@
     margin-left: 30px;
     margin-top: 10px;
 }
+
+.target2_scene2{
+    margin-top: 90px;
+    border: 4px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    width: 437px;
+    height: 141px;
+    margin-left:-4px;
+}
+.finishScene2{
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(154, 230, 243);
+    margin-top:50px;
+}
+
+
+/* scene1.3 */
+.description_scene3{
+    height: 10px;
+    position: relative;
+    animation-name: exampleTens_scene3;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+    margin-left: 40px;
+}
+@keyframes exampleTens_scene3 {
+    from {top: 0px; color: white;}
+    to {top: 110px; color: black;}
+}
+
+.target1_true_scene3 img{
+    margin-right: -15px;
+}
+.target1_true_scene3{
+    width: 377px;
+    height: 141px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.target2_scene3{
+    background-color: rgb(255, 244, 210);
+    border: 4px solid  rgb(255, 244, 210);
+    margin-top: 90px;
+    border-radius: 20px;
+    width: 437px;
+    height: 141px;
+    margin-left:-4px;
+    animation-name: Target2_scene3;
+    animation-duration: 3s;
+}
+@keyframes Target2_scene3 {
+    from {
+        border: 4px solid rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
+    }
+    to {
+        background-color: rgb(255, 244, 210);
+        border: 4px solid  rgb(255, 244, 210);
+    }
+}
+.finishscene3{
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(154, 230, 243);
+    margin-top:50px;
+}
+
+
+
+/* scene1.4 */
+.description_scene4{
+    height: 10px;
+    position: relative;
+    animation-name: exampleTens_scene4;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+    margin-left: 40px;
+}
+@keyframes exampleTens_scene4 {
+    from {top: 0px; color: white;}
+    to {top: 110px; color: black;}
+}
+
+.target1_true_scene4 img{
+    margin-right: -15px;
+}
+.target1_true_scene4{
+    width: 377px;
+    height: 141px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.target2_scene4{
+    background-color: rgb(255, 244, 210);
+    border: 4px solid  rgb(255, 244, 210);
+    margin-top: 90px;
+    border-radius: 20px;
+    width: 437px;
+    height: 141px;
+    margin-left:-4px;
+    animation-name: Target2_scene3;
+    animation-duration: 3s;
+}
+@keyframes Target2_scene4 {
+    from {
+        border: 4px solid rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
+    }
+    to {
+        background-color: rgb(255, 244, 210);
+        border: 4px solid  rgb(255, 244, 210);
+    }
+}
+.finishscene4{
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(154, 230, 243);
+    margin-top:50px;
+}
+
+
+/* scene1.5 */
+.description_scene5{
+    height: 10px;
+    position: relative;
+    animation-name: exampleTens_scene5;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+    margin-left: 40px;
+}
+@keyframes exampleTens_scene5 {
+    from {top: 0px; color: white;}
+    to {top: 110px; color: black;}
+}
+
+.target1_true_scene5 img{
+    margin-right: -15px;
+}
+.target1_true_scene5{
+    width: 377px;
+    height: 141px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.target2_scene5{
+    background-color: rgb(255, 244, 210);
+    border: 4px solid  rgb(255, 244, 210);
+    margin-top: 90px;
+    border-radius: 20px;
+    width: 437px;
+    height: 141px;
+    margin-left:-4px;
+    animation-name: Target2_scene5;
+    animation-duration: 3s;
+}
+@keyframes Target2_scene5 {
+    from {
+        border: 4px solid rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
+    }
+    to {
+        background-color: rgb(255, 244, 210);
+        border: 4px solid  rgb(255, 244, 210);
+    }
+}
+.finishscene5{
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(154, 230, 243);
+    margin-top:50px;
+}
