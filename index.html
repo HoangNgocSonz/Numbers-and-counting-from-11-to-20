@@ -10,9 +10,51 @@
 </head>
 <body class="body">
     <header> 
-        <img  src="assests/images/dra.png"/>
+        <img class="imgheader" src="assests\images\dra+in.svg"/>
     </header>
-    <nav></nav>
+    <nav>
+        <div class="nav_container">
+            <div class="nav_logo">
+                 <a href="index.html" title="home.in">
+                <img class="nav_logo" src="assests\images\logo1.svg"/>     
+                </a>
+            </div>
+            <div class="nav_main_pages">
+                <a href="index.html" class="nav_main_pages">Main page</a>
+                <a href="index.html" class="nav_main_pages">My classes</a>
+                <a href="index.html" class="nav_main_pages">Portfolio</a>
+            </div>
+            <div class="nav_right">
+                <div class="config_buton" id="invite_modal_component">
+                    <div >
+                        <a class="invite" id="invite-modal">
+                            <span>Invite a colleague</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_icon"> user <br> name
+                        <svg class="drop_icon" height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>drop-icon</title><use transform="rotate(-90 3 3)" xlink:href="#drop-icon-a">'</use>
+                            <defs>
+                                <path d="M2.48936 4.984l3.2-3.2c.408-.408.408-1.07 0-1.478-.408-.408-1.069-.408-1.477 0L.301356 4.217c-.2119997.211-.3079997.49-.3009997.767-.007.277.089.556.3009997.767L4.21236 9.662c.408.408 1.069.408 1.477 0 .408-.408.408-1.07 0-1.478l-3.2-3.2z" fill-rule="evenodd" id="drop-icon-a"></path>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="headbar--profile-menu headbar--popup-menu" style="display: none;">
+                    <div class="headbar--popup-menu-item">
+                        <a class="link" href="/teachers/profile">Profile</a>
+                    </div>
+                    <div class="headbar--tos">
+                        <a class="link" href="/teachers/profile/about">Terms of use</a>
+                    </div>
+                    <div class="headbar--popup-menu-item">
+                        <a class="link" href="/logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div id = "main_body" >
         <div id = "main_left"> 
             <img  src="assests/images/menu.png"/>
