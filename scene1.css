@@ -74,7 +74,6 @@
     height: 141px;
     margin-left: 30px;
     margin-top: 10px;
-
 }
 
 .target2_true{
@@ -111,7 +110,7 @@
 .tensAnimation{
     position: relative;
     animation-name: Tens;
-    animation-duration: 2s;  
+    animation-duration: 1.5s;  
     animation-fill-mode: both;
 }
 @keyframes Tens {
@@ -121,7 +120,7 @@
 .onesAnimation{
     position: relative;
     animation-name: Ones;
-    animation-duration: 2s;  
+    animation-duration: 1.5s;  
     animation-fill-mode: both;
 }
 @keyframes Ones {
@@ -141,6 +140,12 @@
 }
 .target1_true img{
     margin-right: -15px;
+}
+.target1_true img img{
+    margin-right: -15px;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
 }
 .target2_true img{
     margin-right: 10px;
@@ -241,6 +246,17 @@
 #chooseLanguare:hover{
     color: rgb(0, 111, 214);
 }
-#block6{
-    /* margin-right:-30px; */
+
+
+
+
+/* scene2.2 */
+.target1_true_scene2 img{
+    margin-right: -15px;
+}
+.target1_true_scene2{
+    width: 377px;
+    height: 141px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
