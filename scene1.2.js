@@ -53,7 +53,7 @@ function drop_scene2(ev) {
     // xuất target 2
     
     if(target_scene2 == 2){
-        console.log( "dfsddddd")
+      console.log( "dfsddddd")
       var div = document.getElementById("target2_true_scene2");
       var nodelist = div.getElementsByTagName("img");
 
