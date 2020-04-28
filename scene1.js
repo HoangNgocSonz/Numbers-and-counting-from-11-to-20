@@ -87,8 +87,6 @@ function drop(ev) {
     }
   }
 
-
-
   // hiện lựa chọn khi hoàn thành di chuyển block
   if(count==16){
     $(document).ready(function(){

@@ -1,0 +1,108 @@
+.scene2{
+    margin-top: 10px;
+    height: 550px;
+    width: 960px;
+    border-radius:20px;
+    margin-left:23%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(177, 177, 177);
+}
+.main{
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(255, 255, 255);
+}
+.process{
+    width: 460px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241);
+    margin-left: 15%;
+    margin-top:12px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.ball{
+    width: 22px;
+    height: auto;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    margin-right: -4px;
+}
+#ball5_2{
+    position: relative;
+    animation-name: ball5_2;
+    animation-duration: 0.5s;  
+    animation-fill-mode: both;
+}
+
+@keyframes ball5_2 {
+    from {left: 0px;}
+    to {left:343px;}
+}
+.back{
+    width: 50px;
+    height: 40px;
+    font-size: 29px;
+    margin-left: 16px;
+    margin-top: 30px;
+}
+.divAbove{
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+#chooseLanguare{
+    margin-left: 19px;
+    margin-top:4px;
+    background-color:rgb(255, 255, 255);
+    border:none;
+    color: rgb(0, 183, 255);
+    font-size: 20px;
+}
+#chooseLanguare:hover{
+    color: rgb(0, 111, 214);
+}
+.start{
+    width: 280px;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 32%;
+    cursor: pointer;
+}
+.start:hover{
+    width: 310px;
+    height: 330px;
+    margin-top: 9%;
+    margin-left: 31%;
+}
+.image1{
+    width: 850px;
+    margin-left: 80px;
+    margin-top:90px
+}
+.fill1{
+    width: 46px;
+    height: 56px;
+    border: 5px solid rgb(245, 217, 59);
+    border-radius: 10px;
+    margin-left: 3px;
+    font-size: 28px;
+}
+.fill2{
+    width: 46px;
+    height: 56px;
+    border: 5px solid rgb(245, 217, 59);
+    border-radius: 10px;
+    margin-left: 3px;
+    font-size: 28px;
+}
+#ball5_2{
+    position: relative;
+    animation-name: ball5_2;
+    animation-duration: 0.5s;  
+    animation-fill-mode: both;
+}
+@keyframes ball5_2 {
+    from {left: 0px;}
+    to {left:388px;}
+}
