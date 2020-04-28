@@ -151,6 +151,7 @@ a.nav_main_pages:hover{
     width: 30%;
     height: 550px;
     float: left;
+    cursor: pointer;
 }
 #main_right{
     width: 70%;

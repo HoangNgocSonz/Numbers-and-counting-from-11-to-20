@@ -227,10 +227,16 @@
 }
 
 .start{
-    width: 300px;
+    width: 280px;
     height: 300px;
     margin-top: 10%;
     margin-left: 32%;
+    cursor: pointer;
+}
+.start:hover{
+    width: 310px;
+    height: 330px;
+   
 }
 #allSelect{
     margin-top:20px;
