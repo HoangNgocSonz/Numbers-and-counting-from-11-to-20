@@ -150,9 +150,29 @@ function showNextScene(){
     });
   }
   if(sceneNumber==1){
-    
     $(document).ready(function(){
       var scene1_2 = document.getElementById("scene1_2");
+      scene1_2.style.display = "block";
+        startDisplay.style.display="none";
+    });
+  }
+  if(sceneNumber==2){
+    $(document).ready(function(){
+      var scene1_2 = document.getElementById("scene1_3");
+      scene1_2.style.display = "block";
+        startDisplay.style.display="none";
+    });
+  }
+  if(sceneNumber==3){
+    $(document).ready(function(){
+      var scene1_2 = document.getElementById("scene1_4");
+      scene1_2.style.display = "block";
+        startDisplay.style.display="none";
+    });
+  }
+  if(sceneNumber==4){
+    $(document).ready(function(){
+      var scene1_2 = document.getElementById("scene1_5");
       scene1_2.style.display = "block";
         startDisplay.style.display="none";
     });
@@ -162,38 +182,4 @@ function showNextScene(){
 
 
 
-// hàm dùng cho màn 1.2
-function drag_scene2(ev) {
-  console.log(ev.target.id);
-  ev.dataTransfer.setData("image", ev.target.id);
-}
-function allowDrop_scene2(ev) {
-  var div_scene2 = document.getElementById("target1_true_scene2");
-  var nodelist = div_scene2.getElementsByTagName("img");
-  if(allowForTarget1&nodelist.length<10){
-    ev.preventDefault();
-  }
-}
-function drop_scene2(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("image");
-  count++;
-  ev.target.appendChild(document.getElementById(data));
-  var div = document.getElementById("target1_true_scene2");
-  var nodelist = div.getElementsByTagName("img");
 
-  if(nodelist.length==10 & target2Open){
-
-    $(document).ready(function(){
-        $("#ones_scene2").append(" <h2 class='descriptionOnes'>Ones</h2>");
-        $( "div.target2" ).replaceWith('<div class="target3"><div class="target2_true" id="div1" ondrop="drop(event)" ondragover="allowDrop2(event)"></div></div>');
-        target2Open=false;
-    });
-  }
-  if(count==16){
-    $(document).ready(function(){
-      $("#select1").append($("#hide1").html());
-    });
-  }
-
-}
