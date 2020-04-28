@@ -144,7 +144,7 @@ function showNextScene(){
   var startDisplay = document.getElementById("start");
   if(sceneNumber==0){
     $(document).ready(function(){
-      var scene1_1 = document.getElementById("scene1_5");
+      var scene1_1 = document.getElementById("scene1_1");
       scene1_1.style.display = "block";
         startDisplay.style.display="none";
     });
