@@ -246,9 +246,16 @@
 #chooseLanguare:hover{
     color: rgb(0, 111, 214);
 }
-
-
-
+.finish{
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: rgb(132, 204, 223);
+    color: white;
+}
+.finish:hover{
+    background-color: rgb(74, 184, 214);
+}
 
 /* scene2.2 */
 .target1_true_scene2 img{

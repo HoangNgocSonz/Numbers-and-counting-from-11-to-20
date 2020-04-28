@@ -33,6 +33,6 @@ function finishScene1_5(){
     $("#ball1" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
     var x = document.getElementById("scene1_5");
     x.style.display = "none";
-    var startDisplay = document.getElementById("start");
+    var startDisplay = document.getElementById("finish");
     startDisplay.style.display="block";
 }
