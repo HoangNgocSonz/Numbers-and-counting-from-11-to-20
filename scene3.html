@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scene3.js"></script>
+    <link rel="stylesheet" type="text/css" href="scene3.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+</head>
+<body style="background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2020/01/background-powerpoint-dep.jpg') ; " >
+    <div class="scene3">
+        <!-- thanh tiến trình -->
+        <div class="divAbove">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html" class="back" >Back</a>
+                </div>
+                <div class="col-8"> 
+                    <div class="process">
+                        <img class="ball" src ="assests/images/ball.png" id="ball1"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball2"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball3"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball4"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball5"></img>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="chooseLanguare">
+                            English
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="scene1VN.html">Vietnamese</a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- màn hình start -->
+        <img class="start" id="start" src="assests/images/start.png" onClick="showNextScene()">
+
+        <center id="finish"  style="display: none;">
+            <a href="index.html" style="text-decoration: none;" >
+                <img src="assests/images/dragon.png" onClick="showNextScene()" style=" width: 500px;"> 
+                <div class="finish" >
+                    <div style="height: 8px;"></div>
+                    <h4>
+                        go to lession
+                    </h4>
+                </div>
+            </a>
+        </center>
+            
+
+        <!-- màn 3.1 -->
+        <div id="scene3_1" style="display: none;">
+            <img class="image1" src="assests/images/scene3_1.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1" style="display: inline;">
+            </div>
+        </div>
+
+        <!-- màn 3.2 -->
+        <div id="scene3_2" style="display: none;">
+            <img class="image_scene2" src="assests/images/scene3_2.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene2" style="display: inline;">
+            </div>
+        </div>
+
+        <!-- màn 3.3 -->
+        <div id="scene3_3" style="display: none;">
+            <img class="image_scene3" src="assests/images/scene3_3.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene3" style="display: inline;">
+            </div>
+        </div>
+
+         <!-- màn 3.4 -->
+         <div id="scene3_4" style="display: none;">
+            <img class="image_scene3" src="assests/images/scene3_4.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene4" style="display: inline;">
+            </div>
+        </div>
+
+        <!-- màn 3.5 -->
+        <div id="scene3_5" style="display: none;">
+            <img class="image_scene5" src="assests/images/scene3_5.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene5" style="display: inline;">
+            </div>
+        </div>
+      
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
