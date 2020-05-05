@@ -77,9 +77,12 @@ function drop_scene2(ev) {
 }
 
 function finishScene1_2(){
+  if(count_scene2>=12){
     $("#ball4" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
     var x = document.getElementById("scene1_2");
     x.style.display = "none";
     var startDisplay = document.getElementById("start");
     startDisplay.style.display="block";
+  }
+    
 }

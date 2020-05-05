@@ -1,5 +1,5 @@
 
-header{
+/* header{
     width: 100%;
     height: 89px;
     margin: 0 auto;
@@ -11,8 +11,8 @@ nav{
     margin: auto;
     background-color: #D8D8D8;
    
-}
-.nav_container{
+} */
+/* .nav_container{
     width: 1024px;
     height: 40px;
     margin: 0 auto;
@@ -38,8 +38,8 @@ img.nav_logo{
     display: block;
     width: 160px;
     height: 40px;
-}
-.nav_main_pages{
+} */
+/* .nav_main_pages{
     display: inline-block;
     height: 40px;
     margin: 0;
@@ -58,8 +58,8 @@ a.nav_main_pages{
         -moz-transition: color 0.2s ease-out;
         transition: color 0.2s ease-out;
         letter-spacing: 0.6px;
-}
-a.nav_main_pages:hover{
+} */
+/* a.nav_main_pages:hover{
     color: #FF5D6A;
 }
 .nav_right{
@@ -183,4 +183,24 @@ a.nav_main_pages:hover{
     position: fixed;
     top: 0;
     left: 0;
+} */
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.img{
+    /* margin-left: 15px; */
+}
+.main_right{
+    width: 800px;
+    height: 470px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: 25%;
+    margin-top: 20px;
+box-shadow: 0px 0px 1px 1px rgb(216, 216, 216);
+}
+.content{
+    margin-left: 15px;
 }
