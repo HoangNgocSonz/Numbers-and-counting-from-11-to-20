@@ -2,21 +2,21 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scene2.js"></script>
-    <link rel="stylesheet" type="text/css" href="scene2.css" media="screen" />
+    <script src="scene3.js"></script>
+    <link rel="stylesheet" type="text/css" href="scene3.css" media="screen" />
     <link rel="shortcut icon" type="image/JPG" href="/assests/images/dragon8.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
 </head>
 <body style="background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2020/01/background-powerpoint-dep.jpg') ; " >
-    <div class="scene2">
-        <!-- thanh tiến trình trùng cho màn 1 -->
+    <div class="scene3">
+        <!-- thanh tiến trình -->
         <div class="divAbove">
             <div class="row">
                 <div class="col-2">
                     <a class="back" href="index.html">
                         <div class="icon-back"></div>
-                        <div class="content-back">Back</div>
+                        <div class="content-back">Quay lại</div>
                     </a>
                 </div>
                 <div class="col-8"> 
@@ -24,17 +24,19 @@
                         <img class="ball" src ="assests/images/ball.png" id="ball1"></img>
                         <img class="ball" src ="assests/images/ball.png" id="ball2"></img>
                         <img class="ball" src ="assests/images/ball.png" id="ball3"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball4"></img>
+                        <img class="ball" src ="assests/images/ball.png" id="ball5"></img>
                     </div>
                 </div>
                 
                 <div class="col-2">
                     <div class="btn-group">
                         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="chooseLanguare">
-                            English
+                            Vietnamese
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="scene2VN.html">Vietnamese</a>
+                            <a class="dropdown-item" href="scene3.html">English</a>
+                            <a class="dropdown-item" href="#">Vietnamese</a>
                         </div>
                         </div>
                 </div>
@@ -50,73 +52,63 @@
                 <div class="finish" >
                     <div style="height: 8px;"></div>
                     <h4>
-                        Go to Lession
+                        Go to Lesson
                     </h4>
                 </div>
             </a>
         </center>
             
 
-        <!-- màn 2.1 -->
-        <div id="scene2_1" style="display: none;">
-            <img class="image1" src="assests/images/t1.png">
+        <!-- màn 3.1 -->
+        <div id="scene3_1" style="display: none;">
+            <img class="image1" src="assests/images/scene3_1.png">
 
-            <div class="row">
-                <div class="col-7">
-                    <h1 style="display: inline; margin-left: 90px;">Total number of blocks:</h1>
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
                     <input class="fill1" id="input1" style="display: inline;">
-                </div>
-                <div class="col-3">
-                    <h1 style="display: inline; margin-left: -20px;">tens and </h1>
-                    <input class="fill2" id="input2" style="display: inline;" id="mySelect" >
-                </div>
-                <div class="col-2">
-                    <h1 style="margin-left: -53px;">ones</h1>
-                </div>
             </div>
         </div>
 
-        <!-- màn 2.2 -->
-        <div id="scene2_2" style="display: none;">
-            <img class="image1" src="assests/images/t2.png">
-            <div style="height: 20px;"></div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <input class="fill1" id="input1_scene2" style="display: inline;" style="display: inline;">
-                    <h1 style="display: inline;">ten and</h1>
-                    <input class="fill2" id="input2_scene2" style="display: inline;" id="mySelect" style="display: inline;">
-                    <h1 style="display: inline;">ones</h1>
-                </div>
-                <div class="col-3"></div>
-            </div>
-            <div style="margin-top:20px; margin-left: 200px;">
-                <h1 style="display: inline;">Total number of pears:</h1>
-                <input class="fill1" id="input3_scene2" style="display: inline;" id="mySelect" style="display: inline; ">
+        <!-- màn 3.2 -->
+        <div id="scene3_2" style="display: none;">
+            <img class="image_scene2" src="assests/images/scene3_2.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene2" style="display: inline;">
             </div>
         </div>
-        
 
+        <!-- màn 3.3 -->
+        <div id="scene3_3" style="display: none;">
+            <img class="image_scene3" src="assests/images/scene3_3.png">
 
-        <!-- màn 2.3 -->
-        <div id="scene2_3" style="display: none;">
-            <img class="image1" src="assests/images/t3.png" style="width:500px; margin-left: 220px; margin-top:10px">
-            <div style="height: 30px;"></div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <input class="fill1" id="input1_scene3" style="display: inline;" style="display: inline;">
-                    <h1 style="display: inline;">ten and</h1>
-                    <input class="fill2" id="input2_scene3" style="display: inline;" id="mySelect" style="display: inline;">
-                    <h1 style="display: inline;">ones</h1>
-                </div>
-                <div class="col-3"></div>
-            </div>
-            <div style="margin-top:20px; margin-left: 200px;">
-                <h1 style="display: inline;">Total number of birds:</h1>
-                <input class="fill1" id="input3_scene3" style="display: inline;" id="mySelect" style="display: inline; ">
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene3" style="display: inline;">
             </div>
         </div>
+
+         <!-- màn 3.4 -->
+         <div id="scene3_4" style="display: none;">
+            <img class="image_scene3" src="assests/images/scene3_4.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene4" style="display: inline;">
+            </div>
+        </div>
+
+        <!-- màn 3.5 -->
+        <div id="scene3_5" style="display: none;">
+            <img class="image_scene5" src="assests/images/scene3_5.png">
+
+            <div class="row" style="margin-top:30px">
+                    <h1 style="display: inline; margin-left: 290px;">Total number of pears:</h1>
+                    <input class="fill1" id="input1_scene5" style="display: inline;">
+            </div>
+        </div>
+      
 
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
