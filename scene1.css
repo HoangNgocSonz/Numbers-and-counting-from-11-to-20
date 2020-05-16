@@ -219,7 +219,7 @@
     to {left:343px;}
 }
 .back{
-    width: 50px;
+    width: 150px;
     height: 40px;
     font-size: 29px;
     margin-left: 16px;
@@ -245,7 +245,7 @@
     margin-top:20px;
 }
 #chooseLanguare{
-    margin-left: 19px;
+    margin-left: -8px;
     margin-top:4px;
     background-color:rgb(255, 255, 255);
     border:none;
@@ -454,4 +454,30 @@
     border-radius: 8px;
     background-color: rgb(154, 230, 243);
     margin-top:50px;
+}
+
+/* Trình thêm */
+.back{
+    padding: 5px;
+    display: flex;
+    margin-top:4px;
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+.back .content-back{
+    width: 80px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px;
+}
+.back .icon-back{
+    width: 20px;
+    margin-top: 4px;
+    background-image: url('/assests/images/page-prev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.back :hover{
+    color: rgb(0, 111, 214);
+    cursor: pointer;
 }

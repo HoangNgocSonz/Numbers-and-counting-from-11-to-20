@@ -18,4 +18,9 @@ img{
 }
 .content{
     margin-left: 15px;
+    text-decoration: none;
+}
+.content:hover{
+    color: rgb(252, 7, 7);
+    cursor: pointer;
 }
