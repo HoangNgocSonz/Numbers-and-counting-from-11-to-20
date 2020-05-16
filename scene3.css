@@ -1,7 +1,7 @@
 .scene3{
     margin-top: 10px;
     height: 550px;
-    width: 960px;
+    width: 1080px;  /* Trình */
     border-radius:20px;
     margin-left:12%;
     background-color: rgb(255, 255, 255);
@@ -39,7 +39,7 @@
     to {left:343px;}
 }
 .back{
-    width: 50px;
+    width: 150px;
     height: 40px;
     font-size: 29px;
     margin-left: 16px;
@@ -52,7 +52,7 @@
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 #chooseLanguare{
-    margin-left: 19px;
+    margin-left: -8px; /* Trình sửa */
     margin-top:4px;
     background-color:rgb(255, 255, 255);
     border:none;
@@ -102,4 +102,30 @@
     border-radius: 10px;
     margin-left: 3px;
     font-size: 28px;
+}
+
+/* Trình thêm */
+.back{
+    padding: 5px;
+    display: flex;
+    margin-top:4px;
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+.back .content-back{
+    width: 80px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px;
+}
+.back .icon-back{
+    width: 20px;
+    margin-top: 4px;
+    background-image: url('/assests/images/page-prev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.back :hover{
+    color: rgb(0, 111, 214);
+    cursor: pointer;
 }
