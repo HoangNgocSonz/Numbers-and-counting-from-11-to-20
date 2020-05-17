@@ -15,16 +15,16 @@
     width: 460px;
     height: 24px;
     border-radius: 20px;
-    background-color: rgb(241, 241, 241);
     margin-left: 15%;
     margin-top:12px;
-    border: 1px solid rgb(180, 180, 180);
+    background: #EDEDED;
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.22), inset 0px 1px 3px 0px rgba(0,0,0,0.18);
 }
 .ball{
     width: 22px;
     height: auto;
     margin-left: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     margin-right: -4px;
 }
 #ball5_2{
