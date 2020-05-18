@@ -18,4 +18,8 @@ img{
 }
 .content{
     margin-left: 15px;
+    
+}
+.content:hover {
+    color: red;
 }
