@@ -20,7 +20,7 @@ function drop_scene3(ev) {
 }
 function finishScene1_3(){
     if(count_scene3>=3){
-        $("#ball3" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+        $("#ball3" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
         var x = document.getElementById("scene1_3");
         x.style.display = "none";
         var startDisplay = document.getElementById("start");
@@ -29,7 +29,7 @@ function finishScene1_3(){
 }
 function finishScene1_4(){
     if(count_scene3>=3){
-        $("#ball2" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+        $("#ball2" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
         var x = document.getElementById("scene1_4");
         x.style.display = "none";
         var startDisplay = document.getElementById("start");
@@ -38,7 +38,7 @@ function finishScene1_4(){
 }
 function finishScene1_5(){
     if(count_scene3>=3){
-        $("#ball1" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+        $("#ball1" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
         var x = document.getElementById("scene1_5");
         x.style.display = "none";
         var startDisplay = document.getElementById("finish");

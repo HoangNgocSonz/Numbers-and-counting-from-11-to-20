@@ -35,7 +35,7 @@ function drop_scene2(ev) {
     
       // console.log("imgChild: " + imgChild);
       if(nodelist.length>nodelist.length - imgChild + imgAdded_scene2 && target_scene2 == 1){
-        $("#target1_true_scene2").append(`<img id="drag${max_scene2 + imgAdded_scene2 + 1}_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="blockAdded">`);
+        $("#target1_true_scene2").append(`<img id="drag${max_scene2 + imgAdded_scene2 + 1}_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="blockAdded">`);
         imgAdded_scene2++;
       }
   
@@ -69,7 +69,7 @@ function drop_scene2(ev) {
   
       // console.log("imgChild: " + imgChild);
       if(nodelist.length>nodelist.length - imgChild + imgAdded_scene2 ){
-        $("#target2_true").append(`<img id="drag${max_scene2 + imgAdded_scene2 + 1}_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
+        $("#target2_true").append(`<img id="drag${max_scene2 + imgAdded_scene2 + 1}_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
         imgAdded_scene2++;
       }
     }
@@ -78,7 +78,7 @@ function drop_scene2(ev) {
 
 function finishScene1_2(){
   if(count_scene2>=12){
-    $("#ball4" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+    $("#ball4" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
     var x = document.getElementById("scene1_2");
     x.style.display = "none";
     var startDisplay = document.getElementById("start");

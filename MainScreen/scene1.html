@@ -2,9 +2,9 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scene1.js"></script>
-    <script src="scene1.2.js"></script>
-    <script src="scene1.3.js"></script>
+    <script src="../js/scene1.js"></script>
+    <script src="../js/scene1.2.js"></script>
+    <script src="../js/scene1.3.js"></script>
     <link rel="stylesheet" type="text/css" href="scene1.css" media="screen" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
@@ -12,30 +12,29 @@
 <body style="background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2020/01/background-powerpoint-dep.jpg') ; " >
     <div class="scene1">
         <!-- thanh tiến trình trùng cho màn 1 -->
+        
         <div class="divAbove">
             <div class="row">
                 <div class="col-2" style="margin-top:7px">
-                    <a href="index.html" class="back" >< quay lại</a>
+                    <a href="index.html" class="back" >< Back</a>
                 </div>
                 <div class="col-8"> 
                     <div class="process">
-                        <img class="ball" src ="assests/images/ball.png" id="ball1"></img>
-                        <img class="ball" src ="assests/images/ball.png" id="ball2"></img>
-                        <img class="ball" src ="assests/images/ball.png" id="ball3"></img>
-                        <img class="ball" src ="assests/images/ball.png" id="ball4"></img>
-                        <img class="ball" src ="assests/images/ball.png" id="ball5"></img>
-            
+                        <img class="ball" src ="../assests/images/ball.png" id="ball1"></img>
+                        <img class="ball" src ="../assests/images/ball.png" id="ball2"></img>
+                        <img class="ball" src ="../assests/images/ball.png" id="ball3"></img>
+                        <img class="ball" src ="../assests/images/ball.png" id="ball4"></img>
+                        <img class="ball" src ="../assests/images/ball.png" id="ball5"></img>
                     </div>
                 </div>
-                
                 <div class="col-2">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="chooseLanguare" style="margin-left: -8px;">
-                            Vietnamese
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="chooseLanguare">
+                            English
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="scene1.html">English</a>
-                            <a class="dropdown-item" href="#">Vietnamese</a>
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="scene1VN.html">Vietnamese</a>
                         </div>
                         </div>
                 </div>
@@ -43,8 +42,18 @@
         </div>
 
         <!-- màn hình start -->
-        <img class="start" id="start" src="assests/images/start.png" onClick="showNextScene()">
-        <img class="finish" id="finish" src="assests/images/dragon.png" onClick="showNextScene()" style="display: none;"> 
+        <img class="start" id="start" src="../assests/images/start.png" onClick="showNextScene()">
+        <center id="finish"  style="display: none;">
+            <a href="index.html" style="text-decoration: none;" >
+                <img src="../assests/images/dragon.png" onClick="showNextScene()" style=" width: 500px;"> 
+                <div class="finish" >
+                    <div style="height: 8px;"></div>
+                    <h4>
+                        Go to lession
+                    </h4>
+                </div>
+            </a>
+        </center>
 
         <!-- màn 1.1 -->
         <div class="scene1_1" id="scene1_1" style="display: none;">
@@ -52,7 +61,7 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-1">
-                    <h3 class="description" onClick="log()">Chục</h3>
+                    <h3 class="description" onClick="log()">Tens</h3>
                 </div>
                 <div class="col-5"></div>
                 <div class="col-1" id="ones">  
@@ -68,64 +77,64 @@
                                 <div class="col-3">
                                     <div class="row">
                                         <div class="col-3">
-                                            <img id="drag1" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag1" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag2" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag2" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag3" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag3" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag4" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <img id="drag5" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                        </div>
-                                        <div class="col-3">
-                                            <img id="drag6" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                        </div>
-                                        <div class="col-3">
-                                            <img id="drag7" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
-                                        </div>
-                                        <div class="col-3">
-                                            <img id="drag8" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag4" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="row">
                                         <div class="col-3">
-                                            <img id="drag9" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag5" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag10" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag6" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag11" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag7" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag12" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag8" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="row">
                                         <div class="col-3">
-                                            <img id="drag13" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag9" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag14" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag10" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag15" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag11" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-3">
-                                            <img id="drag16" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                            <img id="drag12" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="drag13" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag14" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag15" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
+                                        </div>
+                                        <div class="col-3">
+                                            <img id="drag16" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="block">
                                         </div>
                                     </div>
                                 </div>
@@ -155,14 +164,14 @@
                         <div class="row" id="hide1" hidden >
                             <div class="row"  id="toRemove">
                                 <div class="col-4" id=""></div>
-                                <div class="col-4"><h3 id="bar1">1 thanh = 1</h3></div>
+                                <div class="col-4"><h3 id="bar1">1 bar = 1</h3></div>
                                 <div class="col-4" id="mlem">
                                     <div class="tenOrOnes" id="hide11">
                                         <div class="button" id="button1"  >
-                                            <h3 onClick="showSelect()" >chục</h3>
+                                            <h3 onClick="showSelect()" >tens</h3>
                                         </div>
                                         <div class="button" id="button2">
-                                            <h3 > đơn vị</h3>
+                                            <h3 > ones</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -173,14 +182,14 @@
                         <div class="row" id="hide2" hidden>
                             <div class="row" id="toRemove2">
                                 <div class="col-2" id=""></div>
-                                <div class="col-5" style="margin-top:35px"><h3 id="block6">6 khối = 6</h3></div>
+                                <div class="col-5" style="margin-top:35px"><h3 id="block6">6 blocks = 6</h3></div>
                                 <div class="col-4" id="toReplace">
                                     <div class="tenOrOnes">
                                         <div class="button" id="button1">
-                                            <h3 >chục</h3>
+                                            <h3 >tens</h3>
                                         </div>
                                         <div class="button" id="button2"  >
-                                            <h3 onClick="finishScene1_1()" id="hide">đơn vị</h3>
+                                            <h3 onClick="finishScene1_1()" id="hide">ones</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +206,7 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-1">
-                    <h3 class="description" onClick="log()">Chục</h3>
+                    <h3 class="description" onClick="log()">Tens</h3>
                 </div>
                 <div class="col-5"></div>
                 <div class="col-1" id="ones_scene2">  
@@ -211,40 +220,40 @@
                         <div class="col-8">
                             <div class="row">
                                 <div class="col-1">
-                                    <img id="drag1_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag1_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag2_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag2_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag3_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag3_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag4_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag4_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag5_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag5_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag6_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag6_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag7_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag7_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag8_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag8_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag9_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag9_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag10_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag10_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag11_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag11_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-1">
-                                    <img id="drag12_scene2" src="assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
+                                    <img id="drag12_scene2" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene2(event)" width="50" height="50" class="block">
                                 </div>
                             </div>
                         </div>
@@ -270,7 +279,7 @@
                 <center>
                     <div class="finishScene2"  onclick="finishScene1_2()">
                         <div style="height: 8px;"></div>
-                       <h4 >ok</h4>
+                       <h4 >OK</h4>
                     </div>
                 </center>
                 
@@ -283,18 +292,18 @@
             <center style="margin-top:0px">
                 <div>
                     <h1>
-                        Di chuyển 15 khối 
+                        Move 15 blocks
                     </h1>
                 </div>
             </center>
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-1">
-                    <h3 class="description_scene3" onClick="log()">Đơn vị</h3>
+                    <h3 class="description_scene3" onClick="log()">Ones</h3>
                 </div>
                 <div class="col-5"></div>
                 <div class="col-1" id="ones_scene3">  
-                    <h3 class="description_scene3" onClick="log()">Chục</h3>
+                    <h3 class="description_scene3" onClick="log()">Tens</h3>
                 </div>
                 <div class="col-3"></div>
             </div>
@@ -307,31 +316,28 @@
                                 <div class="col-8">
                                     <div class="row">
                                         <div class="col-2">
-                                            <img id="drag1_scene3" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag1_scene3" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
-                                            <img id="drag2_scene3" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag2_scene3" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
-                                            <img id="drag3_scene3" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag3_scene3" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
-                                            <img id="drag4_scene3" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag4_scene3" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
-                                            <img id="drag5_scene3" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag5_scene3" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
-                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            
                         </div>
                         <div class="col-6">
-                            <img id="drag6_scene3" src="assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
+                            <img id="drag6_scene3" src="../assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
 
                         </div>
                     </div>
@@ -359,32 +365,30 @@
                 <center>
                     <div class="finishscene3"  onclick="finishScene1_3()">
                         <div style="height: 8px;"></div>
-                       <h4 >ok</h4>
+                       <h4 >OK</h4>
                     </div>
                 </center>
                 
             </div>
         </div>
 
-
-
         <!-- màn 1.4 -->
         <div class="scene1_4" id="scene1_4" style="display: none;">
             <center style="margin-top:0px">
                 <div>
                     <h1>
-                        Di chuyển 11 khối
+                        Move 11 blocks
                     </h1>
                 </div>
             </center>
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-1">
-                    <h3 class="description_scene4" onClick="log()">Chục</h3>
+                    <h3 class="description_scene4" onClick="log()">Ones</h3>
                 </div>
                 <div class="col-5"></div>
                 <div class="col-1" id="ones_scene4">  
-                    <h3 class="description_scene4" onClick="log()">Đơn vị</h3>
+                    <h3 class="description_scene4" onClick="log()">Tens</h3>
                 </div>
                 <div class="col-3"></div>
             </div>
@@ -397,7 +401,7 @@
                                 <div class="col-8">
                                     <div class="row">
                                         <div class="col-2">
-                                            <img id="drag1_scene4" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                            <img id="drag1_scene4" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                         </div>
                                         <div class="col-2">
                                             
@@ -421,7 +425,7 @@
                             
                         </div>
                         <div class="col-6">
-                            <img id="drag6_scene4" src="assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
+                            <img id="drag6_scene4" src="../assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
 
                         </div>
                     </div>
@@ -430,18 +434,12 @@
                     <div class="col-6">
                         <div class="target1">
                             <div class="target1_true_scene4" id="target1_true_scene4" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                                
                             </div>
-                            
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="target2_scene4">
-                            <!-- <div class="target2_true_scene3" id="target2_true_scene3"  ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                                
-                            </div> -->
                             <div class="target1_true_scene4" id="target1_true_scene4" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                                
                             </div>
                         </div>
                     </div>
@@ -449,7 +447,7 @@
                 <center>
                     <div class="finishscene4"  onclick="finishScene1_4()">
                         <div style="height: 8px;"></div>
-                       <h4 >ok</h4>
+                       <h4 >OK</h4>
                     </div>
                 </center>
                 
@@ -462,18 +460,18 @@
     <center style="margin-top:0px">
         <div>
             <h1>
-                Di chuyển 14 khối
+                Move 14 blocks
             </h1>
         </div>
     </center>
     <div class="row">
         <div class="col-2"></div>
         <div class="col-1">
-            <h3 class="description_scene5" onClick="log()">Chục</h3>
+            <h3 class="description_scene5" onClick="log()">Ones</h3>
         </div>
         <div class="col-5"></div>
         <div class="col-1" id="ones_scene5">  
-            <h3 class="description_scene5" onClick="log()">Đơn vị</h3>
+            <h3 class="description_scene5" onClick="log()">Tens</h3>
         </div>
         <div class="col-3"></div>
     </div>
@@ -486,16 +484,16 @@
                         <div class="col-8">
                             <div class="row">
                                 <div class="col-2">
-                                    <img id="drag1_scene5" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                    <img id="drag1_scene5" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-2">
-                                    <img id="drag2_scene5" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                    <img id="drag2_scene5" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-2">
-                                    <img id="drag3_scene5" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                    <img id="drag3_scene5" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-2">
-                                    <img id="drag4_scene5" src="assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
+                                    <img id="drag4_scene5" src="../assests/images/block.png" draggable="true" ondragstart="drag_scene3(event)" width="50" height="50" class="block">
                                 </div>
                                 <div class="col-2">
                                    
@@ -506,12 +504,9 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
                 </div>
                 <div class="col-6">
-                    <img id="drag6_scene5" src="assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
-
+                    <img id="drag6_scene5" src="../assests/images/tenBlock.png" draggable="true" ondragstart="drag_scene3(event)" width="360" height="50">
                 </div>
             </div>
         </div>
@@ -519,18 +514,12 @@
             <div class="col-6">
                 <div class="target1">
                     <div class="target1_true_scene5" id="target1_true_scene5" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                        
                     </div>
-                    
                 </div>
             </div>
             <div class="col-6">
                 <div class="target2_scene5">
-                    <!-- <div class="target2_true_scene3" id="target2_true_scene3"  ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                        
-                    </div> -->
                     <div class="target1_true_scene5" id="target1_true_scene5" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                        
                     </div>
                 </div>
             </div>
@@ -538,7 +527,7 @@
         <center>
             <div class="finishscene5"  onclick="finishScene1_5()">
                 <div style="height: 8px;"></div>
-               <h4 >ok</h4>
+               <h4 >OK</h4>
             </div>
         </center>
         

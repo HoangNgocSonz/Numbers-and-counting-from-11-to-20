@@ -38,7 +38,7 @@ $(document).ready(function(){
         var y = $(this).val(); 
         if (input1 && y==5){
             setTimeout(function(){
-                $("#ball3" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+                $("#ball3" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
                 var x = document.getElementById("scene2_1");
                 x.style.display = "none";
                 var startDisplay = document.getElementById("start");
@@ -69,7 +69,7 @@ $(document).ready(function(){
         var z = $(this).val(); 
         if (input1_scene2 && input2_scene2 && z == 12) {
             setTimeout(function(){
-                $("#ball2" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+                $("#ball2" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
                 var x = document.getElementById("scene2_2");
                 x.style.display = "none";
                 var startDisplay = document.getElementById("start");
@@ -102,7 +102,7 @@ $(document).ready(function(){
         console.log("z: "+ z)
         if (input1_scene3 && input2_scene3 && z == 14) {
             setTimeout(function(){
-                $("#ball1" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+                $("#ball1" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
                 var x = document.getElementById("scene2_3");
                 x.style.display = "none";
                 var startDisplay = document.getElementById("finish");

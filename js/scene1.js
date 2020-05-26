@@ -48,7 +48,7 @@ function drop(ev) {
   
     // console.log("imgChild: " + imgChild);
     if(nodelist.length>nodelist.length - imgChild + imgAdded && target == 1){
-      $("#target1_true").append(`<img id="drag${max + imgAdded + 1}" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
+      $("#target1_true").append(`<img id="drag${max + imgAdded + 1}" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
       imgAdded++;
     }
 
@@ -82,7 +82,7 @@ function drop(ev) {
 
     // console.log("imgChild: " + imgChild);
     if(nodelist.length>nodelist.length - imgChild + imgAdded ){
-      $("#target2_true").append(`<img id="drag${max + imgAdded + 1}" src="assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
+      $("#target2_true").append(`<img id="drag${max + imgAdded + 1}" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
       imgAdded++;
     }
   }
@@ -121,7 +121,7 @@ function finishScene1_1() {
   setTimeout(function(){
       $("div#toReplace" ).replaceWith('<h3 style="margin-left:34px; margin-top:61px;" class="onesAnimation">ones</h3>');
       setTimeout(function(){
-        $("#ball5" ).replaceWith('<img class="ball" src ="assests/images/ball.png" id="ball5_2"></img>');
+        $("#ball5" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
         var x = document.getElementById("scene1_1");
         x.style.display = "none";
         var startDisplay = document.getElementById("start");
