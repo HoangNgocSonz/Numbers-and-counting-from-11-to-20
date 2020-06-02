@@ -33,12 +33,11 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
   if(target == 1){
     var div = document.getElementById("target1_true");
-    console.log(div);
     var nodelist = div.getElementsByTagName("img");
 
     console.log(nodelist.length)
     var imgChild=0;
-    console.log("max + imgAdded: " + (max + imgAdded))
+    // console.log("max + imgAdded: " + (max + imgAdded))
     for(var i=1; i<=max + imgAdded; i++){
       var tagId="drag"+ i.toString();
       var img = document.getElementById(tagId);
@@ -67,12 +66,11 @@ function drop(ev) {
   
   if(target == 2){
     var div = document.getElementById("target2_true");
-    console.log(div);
     var nodelist = div.getElementsByTagName("img");
 
-    console.log(nodelist.length)
+    // console.log(nodelist.length)
     var imgChild=0;
-    console.log("max + imgAdded: " + (max + imgAdded))
+    // console.log("max + imgAdded: " + (max + imgAdded))
     for(var i=1; i<=max + imgAdded; i++){
       var tagId="drag"+ i.toString();
       var img = document.getElementById(tagId);
@@ -85,14 +83,21 @@ function drop(ev) {
       $("#target2_true").append(`<img id="drag${max + imgAdded + 1}" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
       imgAdded++;
     }
+    var div = document.getElementById("target1_true");
+    var nodelist1 = div.getElementsByTagName("img");
+    var div2 = document.getElementById("target2_true");
+    var nodelist2 = div2.getElementsByTagName("img");
+    console.log(nodelist2.length)
+    if(nodelist1.length >=10 && nodelist2.length>=7){
+      $(document).ready(function(){
+        $("#select1").append($("#hide1").html());
+      });
+    }
   }
 
   // hiện lựa chọn khi hoàn thành di chuyển block
-  if(count==16){
-    $(document).ready(function(){
-      $("#select1").append($("#hide1").html());
-    });
-  }
+
+
 
 }
 
