@@ -62,7 +62,7 @@ $(document).ready(function(){
         var y = $(this).val(); 
         if (input1 && y==2){
             input2_scene2=true;
-            
+            document.getElementById("last_question1").style.display="block"
         }
      });
      $("#input3_scene2").bind("change paste keyup", function() {
@@ -95,6 +95,7 @@ $(document).ready(function(){
         if (input1_scene3=true && y==4){
             input2_scene3=true;
             console.log("y: "+ y)
+            document.getElementById("last_question2").style.display="block"
         }
      });
      $("#input3_scene3").bind("change paste keyup", function() {
