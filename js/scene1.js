@@ -183,6 +183,10 @@ function showNextScene(){
   sceneNumber++;
 }
 
+function playaudio(path) {
+  var au1 = new audio(path);
+  au1.play();
+}
 
 
 
