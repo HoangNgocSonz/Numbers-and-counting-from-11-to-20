@@ -83,6 +83,7 @@ function drop(ev) {
       $("#target2_true").append(`<img id="drag${max + imgAdded + 1}" src="../assests/images/block.png" draggable="true" ondragstart="drag(event)" width="50" height="50" class="blockAdded">`);
       imgAdded++;
     }
+    // khi kéo block thành công thì hiển thị câu hỏi
     var div = document.getElementById("target1_true");
     var nodelist1 = div.getElementsByTagName("img");
     var div2 = document.getElementById("target2_true");
