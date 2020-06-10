@@ -54,7 +54,7 @@ function drop(ev) {
     if(nodelist.length - imgChild==10 & target2Open){
     
       $(document).ready(function(){
-          $("#ones").append(" <h3 class='descriptionOnes'>Ones</h3>");
+          $("#ones").append(" <h3 class='descriptionOnes'><img src='../assests/images/Loa.png' style='height: 30px; width:30px; margin-top:-7px' > Ones</h3>");
           $( "div.target2" ).replaceWith('<div class="target3"><div class="target2_true" id="target2_true" ondrop="drop(event)" ondragover="allowDrop2(event)"><img></div></div>');
           target2Open=false;
           target = 2;
@@ -148,7 +148,7 @@ function showNextScene(){
   var startDisplay = document.getElementById("start");
   if(sceneNumber==0){
     $(document).ready(function(){
-      var scene1_1 = document.getElementById("scene1_1");
+      var scene1_1 = document.getElementById("scene1_5");
       scene1_1.style.display = "block";
         startDisplay.style.display="none";
     });
@@ -184,6 +184,10 @@ function showNextScene(){
   sceneNumber++;
 }
 
+function playAudio(path) {
+  var au1 = new Audio(path);
+  au1.play();
+}
 
 
 

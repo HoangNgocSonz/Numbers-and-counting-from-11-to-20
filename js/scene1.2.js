@@ -42,7 +42,7 @@ function drop_scene2(ev) {
       if(nodelist.length - imgChild==10 & target2Open_scene2){
         $(document).ready(function(){
             console.log("sdfsdfsdsdfsduuuupp")
-            $("#ones_scene2").append(" <h3 class='descriptionOnes'>Ones</h3>");
+            $("#ones_scene2").append(" <h3 class='descriptionOnes'><img src='../assests/images/Loa.png' style='height: 30px; width:30px; margin-top:-7px' > Ones</h3>");
             $(".target2_scene2" ).replaceWith('<div class="target3"><div class="target2_true" id="target2_true_scene2" ondrop="drop_scene2(event)" ondragover="allowDrop_scene2(event)"><img></div></div>');
             target2Open_scene2=false;
             target_scene2 = 2;
@@ -77,12 +77,18 @@ function drop_scene2(ev) {
 }
 
 function finishScene1_2(){
-  if(count_scene2>=12){
+  var div = document.getElementById("target1_true_scene2");
+  var nodelist1 = div.getElementsByTagName("img");
+  var div2 = document.getElementById("target2_true_scene2");
+  var nodelist2 = div2.getElementsByTagName("img");
+  console.log(nodelist1.length)
+  console.log(nodelist2.length)
+  if(nodelist1.length >=10 && nodelist2.length>=3){
     $("#ball4" ).replaceWith('<img class="ball" src ="../assests/images/ball.png" id="ball5_2"></img>');
     var x = document.getElementById("scene1_2");
     x.style.display = "none";
     var startDisplay = document.getElementById("start");
     startDisplay.style.display="block";
   }
-    
+
 }

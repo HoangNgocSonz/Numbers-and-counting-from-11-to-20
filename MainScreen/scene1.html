@@ -7,6 +7,7 @@
     <script src="../js/scene1.3.js"></script>
     <link rel="stylesheet" type="text/css" href="scene1.css" media="screen" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
 </head>
 <body style="background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2020/01/background-powerpoint-dep.jpg') ; " >
@@ -59,14 +60,14 @@
         <div class="scene1_1" id="scene1_1" style="display: none;">
             
             <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <h3 class="description" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Tens</h3>
+                </div>
                 <div class="col-2"></div>
-                <div class="col-1">
-                    <h3 class="description" onClick="log()">Tens</h3>
+                <div class="col-2" id="ones">  
                 </div>
-                <div class="col-5"></div>
-                <div class="col-1" id="ones">  
-                </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
             <div class="main">
                 <div class="images">
@@ -145,6 +146,7 @@
                 </div>
                 <div class="row" >
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:125px; margin-top:50px " onclick="playAudio('../assests/audio/tens.mp3')"></div>
                         <div class="target1">
                             <div class="target1_true" id="target1_true" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 
@@ -152,6 +154,7 @@
                         </div>
                     </div>
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:100px; margin-top:50px " onclick="playAudio('../assests/audio/ones.mp3')"></div>
                         <div class="target2" id="target2">
                             <div class="target2_true" id="div1" >
         
@@ -205,13 +208,13 @@
         <div class="scene1_2" id="scene1_2" style="display: none;">
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-1">
-                    <h3 class="description" onClick="log()">Tens</h3>
+                <div class="col-2">
+                    <h3 class="description" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Tens</h3>
                 </div>
-                <div class="col-5"></div>
-                <div class="col-1" id="ones_scene2">  
+                <div class="col-4"></div>
+                <div class="col-2" id="ones_scene2">  
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
             <div class="main">
                 <div class="images">
@@ -262,6 +265,7 @@
                 </div>
                 <div class="row" >
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:220px; margin-top:50px " onclick="playAudio('../assests/audio/tens.mp3')"></div>
                         <div class="target1">
                             <div class="target1_true_scene2" id="target1_true_scene2" ondrop="drop_scene2(event)" ondragover="allowDrop_scene2(event)">
                                 
@@ -269,6 +273,7 @@
                         </div>
                     </div>
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px;  position: absolute; margin-left:190px; margin-top:50px " onclick="playAudio('../assests/audio/ones.mp3')"></div>
                         <div class="target2_scene2" id="target2_scene2">
                             <div class="target2_true_scene2" id="target2_true_scene2" >
         
@@ -291,21 +296,21 @@
         <div class="scene1_3" id="scene1_3" style="display: none;">
             <center style="margin-top:0px">
                 <div>
-                    <h1>
-                        Move 15 blocks
+                    <h1 onclick="playAudio('../assests/audio/move15.mp3')">
+                        <img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Move 15 blocks
                     </h1>
                 </div>
             </center>
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-1">
-                    <h3 class="description_scene3" onClick="log()">Ones</h3>
+                <div class="col-2">
+                    <h3 class="description_scene3" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Ones</h3>
                 </div>
-                <div class="col-5"></div>
-                <div class="col-1" id="ones_scene3">  
-                    <h3 class="description_scene3" onClick="log()">Tens</h3>
+                <div class="col-4"></div>
+                <div class="col-2" id="ones_scene3">  
+                    <h3 class="description_scene3" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Tens</h3>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
             <div class="main">
                 <div class="images">
@@ -344,6 +349,7 @@
                 </div>
                 <div class="row" >
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:220px; margin-top:46px " onclick="playAudio('../assests/audio/ones.mp3')"></div>
                         <div class="target1">
                             <div class="target1_true_scene3" id="target1_true_scene3" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                                 
@@ -352,10 +358,8 @@
                         </div>
                     </div>
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:215px; margin-top:50px " onclick="playAudio('../assests/audio/tens.mp3')"></div>
                         <div class="target2_scene3">
-                            <!-- <div class="target2_true_scene3" id="target2_true_scene3"  ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
-                                
-                            </div> -->
                             <div class="target1_true_scene3" id="target1_true_scene3" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                                 
                             </div>
@@ -376,21 +380,21 @@
         <div class="scene1_4" id="scene1_4" style="display: none;">
             <center style="margin-top:0px">
                 <div>
-                    <h1>
-                        Move 11 blocks
+                    <h1 onclick="playAudio('../assests/audio/move11.mp3')">
+                        <img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Move 11 blocks
                     </h1>
                 </div>
             </center>
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-1">
-                    <h3 class="description_scene4" onClick="log()">Ones</h3>
+                <div class="col-2">
+                    <h3 class="description_scene4" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Ones</h3>
                 </div>
-                <div class="col-5"></div>
-                <div class="col-1" id="ones_scene4">  
-                    <h3 class="description_scene4" onClick="log()">Tens</h3>
+                <div class="col-4"></div>
+                <div class="col-2" id="ones_scene4">  
+                    <h3 class="description_scene4" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Tens</h3>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
             <div class="main">
                 <div class="images">
@@ -432,12 +436,14 @@
                 </div>
                 <div class="row" >
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:220px; margin-top:46px " onclick="playAudio('../assests/audio/ones.mp3')"></div>
                         <div class="target1">
                             <div class="target1_true_scene4" id="target1_true_scene4" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
+                        <div style="width: 100px; height: 30px; position: absolute; margin-left:220px; margin-top:46px " onclick="playAudio('../assests/audio/tens.mp3')"></div>
                         <div class="target2_scene4">
                             <div class="target1_true_scene4" id="target1_true_scene4" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                             </div>
@@ -459,21 +465,21 @@
 <div class="scene1_5" id="scene1_5" style="display: none;">
     <center style="margin-top:0px">
         <div>
-            <h1>
-                Move 14 blocks
+            <h1 onclick="playAudio('../assests/audio/move14.mp3')">
+                <img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Move 14 blocks
             </h1>
         </div>
     </center>
     <div class="row">
         <div class="col-2"></div>
-        <div class="col-1">
-            <h3 class="description_scene5" onClick="log()">Ones</h3>
+        <div class="col-2">
+            <h3 class="description_scene5" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Ones</h3>
         </div>
-        <div class="col-5"></div>
-        <div class="col-1" id="ones_scene5">  
-            <h3 class="description_scene5" onClick="log()">Tens</h3>
+        <div class="col-4"></div>
+        <div class="col-2" id="ones_scene5">  
+            <h3 class="description_scene5" onClick="log()"><img src="../assests/images/Loa.png" style="height: 30px; width:30px; margin-top:-7px" > Tens</h3>
         </div>
-        <div class="col-3"></div>
+        <div class="col-2"></div>
     </div>
     <div class="main">
         <div class="images">
@@ -512,12 +518,14 @@
         </div>
         <div class="row" >
             <div class="col-6">
+                <div style="width: 100px; height: 30px; position: absolute; margin-left:220px; margin-top:46px " onclick="playAudio('../assests/audio/ones.mp3')"></div>
                 <div class="target1">
                     <div class="target1_true_scene5" id="target1_true_scene5" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                     </div>
                 </div>
             </div>
             <div class="col-6">
+                <div style="width: 100px; height: 30px;  position: absolute; margin-left:220px; margin-top:46px " onclick="playAudio('../assests/audio/tens.mp3')"></div>
                 <div class="target2_scene5">
                     <div class="target1_true_scene5" id="target1_true_scene5" ondrop="drop_scene3(event)" ondragover="allowDrop_scene3(event)">
                     </div>

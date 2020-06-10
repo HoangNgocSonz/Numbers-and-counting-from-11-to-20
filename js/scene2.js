@@ -112,3 +112,9 @@ $(document).ready(function(){
         }
      });
 });
+
+function playAudio(path) {
+    var au1 = new Audio(path);
+    au1.play();
+  }
+  
